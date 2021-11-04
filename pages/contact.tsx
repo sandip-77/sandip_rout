@@ -113,7 +113,7 @@ const Contact = () => {
                                 </Grid>
                             </Grid>
                             <Grid  alignItems='center' mb={5} sx={sx} xs={12} md={6} lg={6} item>
-                                <form>
+                                <form action='https://formsubmit.co/sandip.rout901@gmail.com' method='post'>
                                     <Input name='Name' required placeholder='Your Name'  fullWidth/>
                                     <Input name='Email' required placeholder='Your Email'  fullWidth/>
                                     <Input name="Message" sx={{marginBottom:'8vh'}} required placeholder="Message" multiline rows={7}  fullWidth/>
