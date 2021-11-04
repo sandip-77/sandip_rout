@@ -5,8 +5,7 @@ import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Navbar from '../components/Navbar';
 import { fontWeight, styled, textAlign } from '@mui/system';
-import TheButton from '../components/TheButton';
-
+import Head from 'next/head';
 
 const Contact = () => {
 
@@ -90,6 +89,11 @@ const Contact = () => {
 
     return (
         <div>
+            <Head>
+        <title>Sandip Rout</title>
+        <meta name="description" content="This is the personal portfolio website of sandip rout." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
             <Navbar/>
             <ContactStyles>
                 <Grid>
@@ -117,7 +121,6 @@ const Contact = () => {
                                     <Input name='Name' required placeholder='Your Name'  fullWidth/>
                                     <Input name='Email' required placeholder='Your Email'  fullWidth/>
                                     <Input name="Message" sx={{marginBottom:'8vh'}} required placeholder="Message" multiline rows={7}  fullWidth/>
-                                    {/* <TheButton link='#' text="SEND MESSAGE"/> */}
                                     <Button sx={{textAlign:'center'}} size='large' disableElevation type='submit'>Send Message</Button>
                                 </form>
                             </Grid>
