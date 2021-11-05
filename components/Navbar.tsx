@@ -90,7 +90,7 @@ const Navbar = () => {
 
 
     return (
-        <div>
+        <div style={{zIndex:999}}>
             <Grid sx={{mt:1, zIndex:999}} container>
                 <Grid container alignItems='center' xs={8} lg={6} item>
                     <Container maxWidth='md'>

@@ -102,7 +102,10 @@ const Portfolio = () => {
                 lineHeight:'37px',
     
             },
-        }
+        },
+        "& img":{
+            zIndex:-1
+          }
 
     }));
 
@@ -135,7 +138,7 @@ const Portfolio = () => {
                                             <Image alt={p.title} src={p.img}/>
                                                 <h4>{p.title}</h4>
                                                 <Grid container>
-                                                    <Link passHref href='https://www.readn.org/'>
+                                                    <Link passHref href={p.link}>
                                                         <a rel="noreferrer" target='_blank'>
                                                         <Grid container alignItems='center' item>
                                                             <span style={{borderBottom:'1px solid'}}>See Project</span>{Arrow}
