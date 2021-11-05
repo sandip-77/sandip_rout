@@ -40,3 +40,8 @@ h3{
       opacity: 1;
   
 }
+
+::selection {
+  color: white;
+  background: black;
+}
