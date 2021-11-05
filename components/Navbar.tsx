@@ -29,6 +29,7 @@ const Sidemenu = styled2(Grid)(({theme})=>({
     color:'white',
     paddingTop:30,
     fontSize:20,
+    zIndex:88,
     "& p":{
         marginLeft:20,
         marginTop:20,
@@ -90,8 +91,8 @@ const Navbar = () => {
 
 
     return (
-        <div style={{zIndex:999}}>
-            <Grid sx={{mt:1, zIndex:999}} container>
+        <div>
+            <Grid sx={{mt:1}} container>
                 <Grid container alignItems='center' xs={8} lg={6} item>
                     <Container maxWidth='md'>
                         <Link passHref href='/'><a><Name>Sandip.</Name></a></Link>
