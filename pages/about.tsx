@@ -208,7 +208,7 @@ const About = () => {
                         <Grid mb={5} mt={3} item container justifyContent='space-between'>
                             <Grid xs={6} item><h3>My Skills</h3></Grid>
                             <Grid justifyContent='flex-end' xs={6} item container alignItems='center' >
-                                <a href="#"></a><span style={{borderBottom:'1px solid'}}>Resume</span>{Arrow}
+                                <a download href="/resume-SandipRout.pdf"><span style={{borderBottom:'1px solid'}}>Resume</span>{Arrow}</a>
                             </Grid>
                         </Grid>
                     </Container>
