@@ -180,7 +180,8 @@ const About = () => {
             <StyledTop>
                 <Container sx={{mt:5}}>
                     <p>
-                        Pixel perfection? YES. Semantic markup with self-explanatory function names ? NO OTHER WAY. 100% W3C valid code. NO errors, NO missing attributes. 100% responsive code. Plus perfectly formatted, indented, commented . You're going to read them like an adventure book.
+                    Working as a developer for several years, on which I have worked with an array of web technologies and had the chance to build all sorts of web applications: from single page static websites to quite large applications integrated with several microservices.
+                
                     </p>
                     <h2>
                         Hello there, I am <span style={{background: 'linear-gradient(to top, #C8C8C8 40%, #fff 20%)'}}>Sandip Rout</span> a full stack developer <br /> based in India.

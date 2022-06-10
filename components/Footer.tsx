@@ -70,7 +70,7 @@ const Footer = ({text}:any) => {
                     <Container maxWidth={text}>
                         <Grid >
                             <h3>Get in touch today </h3>
-                            <h4 ><a style={{display:'flex', alignItems:'center'}} href="mailto:sandip.rout901@gmail.com">sandip.rout901@gmail.com {Arrow}</a></h4>
+                            <h4 ><a style={{display:'flex', alignItems:'center'}} href="mailto:contact@sandiprout.com">contact@sandiprout.com {Arrow}</a></h4>
                             <p>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites given below.</p>
                         </Grid>
 
