@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { Button, Container, Grid } from '@mui/material';
 import { Box, styled } from '@mui/system';
 import TheButton from '../components/TheButton';
-import readnImg from '../public/readn-poster.png';
+import grabASnak from '../public/images/grab-a-snak.png';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Link from 'next/link';
 import Footer from '../components/Footer';
@@ -68,7 +68,7 @@ const RecentprojectBox = styled(Box)(({theme})=> ({
 
   },
   "& img":{
-    zIndex:-1
+    zIndex:-1,
   }
 }));
 
@@ -105,11 +105,11 @@ const Home: NextPage = () => {
       <Navbar/>
 
       {/* Profile image */}
-      <ProfileImageGrid>
-        <Grid sx={{mt:3}} item container justifyContent='center'>
-          <Image src={sandipImg} alt='Sandip Rout' width='171' height='171'/>
-        </Grid>
-      </ProfileImageGrid>
+      <div className=''>
+        <div className='mt-3 justify-center flex'>
+          <Image className='rounded-full z-[-1]' src={sandipImg} alt='Sandip Rout' width='171' height='171'/>
+        </div>
+      </div>
 
     {/* INRODUCTION */}
     <IntroBox>
@@ -117,12 +117,12 @@ const Home: NextPage = () => {
         <Container>
           <Grid>
             <Container maxWidth='md' sx={{p:2, pt:1, pb:2}}>
-            <h3>I'm Sandip, a freelance full stack developer.</h3>
+            <h3>I'm Sandip, a <span style={{background: 'linear-gradient(to top, #FEDDBE 45%, #fff 20%)'}}>Digital Product</span> developer.</h3>
             </Container>
           </Grid>
           <Grid>
             <Container maxWidth='md'  sx={{p:4, pt:1}}>
-              <p>Young and serious about work, always welcome a new challenge. Passionate about developing and absolutely love everything I build.</p>
+              <p>Young and serious about work, always welcome a new challenge. Passionate about development and absolutely love everything I build.</p>
             </Container>
             <Container maxWidth='md'>
               <Grid sx={{pb:12, mt:2, borderBottom:'1px solid rgba(0, 0, 0, 0.2)'}}>
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
 
     {/* Recent Projects */}
 
-    <RecentprojectBox>
+    <RecentprojectBox className='text-center'>
       <Box mt={4}>
         <Grid textAlign='center'>
           <h3>Recent Project</h3>
@@ -148,18 +148,20 @@ const Home: NextPage = () => {
         </Grid>
         <Grid>
           <Container maxWidth='md' sx={{mt:4}}>
-            <Image  src={readnImg} alt='readn' />
+            <div  className='shadow-md'>
+              <Image  className='shadow-lg border-black border'  src={grabASnak} alt='grabASnak' />
+            </div>
           </Container>
 
           {/* recent post name and links to site */}
-            <Container maxWidth='md'>
+            <Container className='mt-3' maxWidth='md'>
               <Grid mb={3} container item alignItems='center' justifyContent='space-between'>
                 <MFmaterialUI>
-                  READN -  A Blog page on book review.
+                Grab A Snak -  An extended ecommerce application
                 </MFmaterialUI>
                 <Grid sx={{fontSize:16, fontWeight:500,}} xs={12} container alignItems='center' item>
-                  <Link passHref href='https://www.readn.org/'>
-                      <a rel="noreferrer" target='_blank'>
+                  <Link passHref href='/portfolio/grab-a-snak'>
+                      <a rel="noreferrer" >
                       <Grid container alignItems='center' item>
                         <span style={{borderBottom:'1px solid'}}>See Project</span>{Arrow}
                       </Grid>

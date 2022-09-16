@@ -184,7 +184,7 @@ const About = () => {
                 
                     </p>
                     <h2>
-                        Hello there, I am <span style={{background: 'linear-gradient(to top, #C8C8C8 40%, #fff 20%)'}}>Sandip Rout</span> a full stack developer <br /> based in India.
+                        Hello there, I am <span style={{background: 'linear-gradient(to top, #FEDDBE 45%, #fff 20%)'}}>Sandip Rout</span> a digital product developer <br /> based in India.
                     </h2>
                 </Container>
                 </StyledTop>

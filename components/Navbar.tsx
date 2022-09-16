@@ -98,7 +98,7 @@ const Navbar = () => {
                         <Link passHref href='/'><a><Name>Sandip.</Name></a></Link>
                     </Container>
                 </Grid>
-                <Grid sx={{display:{xs:'none', lg:'flex'}}} alignItems='center' justifyContent='space-evenly' container direction='row' item lg={6}>
+                <Grid sx={{display:{xs:'none', lg:'flex'}}} alignItems='center' maxWidth='md' justifyContent='end' className='gap-12 px-6 text-lg' container direction='row' item lg={6}>
                     
                     <Link passHref href='/about'>
                         <a><Grid>About</Grid></a>

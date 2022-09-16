@@ -10,6 +10,7 @@ import TheButton from '../components/TheButton';
 import Footer from '../components/Footer';
 import ProfileFotter from '../components/PortfolioFooter';
 import Link from 'next/link'
+import classNames from 'classnames';
 
 
 
@@ -126,20 +127,22 @@ const Portfolio = () => {
                 <Grid>
                     <Container maxWidth='md'>
                         <h2>Portfolio</h2>
-                        <p>These are not my designs(except readn.org), only the code. And In some websites (which I made just for practice) there are lorem ipsome texts, simply because I did not know what to write there.</p>
+                        <p>The last 1 year I have been working mostly with the Javascript stack along with other popular technologies: Reactjs, Redux, Nodejs, Express, MongoDb, AWS, MaterialUI, Bootstrap, Foundation, AWS. Here are some of the results.</p>
                     </Container>
                     {/* Projects */}
                     <Container>
                         <Grid mb={7} mt={5} spacing={2} container>
                             {
-                                Projects.map(p => {
+                                Projects.map((p, index) => {
                                     return (
-                                        <Grid item xs={12} md={6} lg={6} key={p.title}>
-                                            <Image alt={p.title} src={p.img}/>
+                                        <Grid  item xs={12} md={6}  lg={6} key={index}>
+                                            <div className={classNames(index===0 || 1 ?'shadow-md':'', "mb-2")}>
+                                                <Image alt={p.title} src={p.mainPoster}/>
+                                            </div>
                                                 <h4>{p.title}</h4>
                                                 <Grid container>
-                                                    <Link passHref href={p.link}>
-                                                        <a rel="noreferrer" target='_blank'>
+                                                    <Link passHref href={`/portfolio/${encodeURIComponent(p.pageLink)}`}>
+                                                        <a rel="noreferrer" >
                                                         <Grid container alignItems='center' item>
                                                             <span style={{borderBottom:'1px solid'}}>See Project</span>{Arrow}
                                                         </Grid>
