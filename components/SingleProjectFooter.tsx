@@ -62,7 +62,7 @@ const TheFotter = styled(Box)(({theme})=> ({
     </TheArrow>
   );
 
-const Footer = ({text}:any) => {
+const SingleProjectFooter = ({text}:any) => {
     return (
         <div>
             <TheFotter>
@@ -95,4 +95,4 @@ const Footer = ({text}:any) => {
     )
 }
 
-export default Footer
+export default SingleProjectFooter
