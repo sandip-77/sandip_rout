@@ -62,8 +62,8 @@ const SingleProject = () => {
                     <div className='mt-12'>
                         <p className='font-medium text-[20px]'>Check out URLS</p>
                         <div className='flex gap-3 items-center text-[18px]'>
-                           {project.urls.prodURL && <a target={'_blank'} href={project.urls.prodURL}><p className='text-[#0968F7] cursor-pointer hover:underline'>production URL</p></a>}
-                           {project.urls.uiURL && <a target={'_blank'} href={project.urls.uiURL}><p className='text-[#0968F7] cursor-pointer hover:underline'>UI URL</p></a>}
+                           {project.urls.prodURL && <a rel="noreferrer" target={'_blank'} href={project.urls.prodURL}><p className='text-[#0968F7] cursor-pointer hover:underline'>production URL</p></a>}
+                           {project.urls.uiURL && <a rel="noreferrer" target={'_blank'} href={project.urls.uiURL}><p className='text-[#0968F7] cursor-pointer hover:underline'>UI URL</p></a>}
                         </div>
                     </div>
                 </div>
