@@ -85,7 +85,7 @@ const Navbar = () => {
             <IconButton sx={{position:'absolute', top:0, right:0, marginRight:2, marginTop:1, color:'white'}} onClick={ ()=> setIsSidemenuOpen(!isSidemenuOpen)}>
                 <ClearIcon sx={{fontSize:32, cursor:'pointer'}} />
             </IconButton>
-            <p style={{textAlign:'center',position:"absolute", fontSize:15, marginLeft:0, left:0, right:0,  bottom:'5vh' }}>© Sandip Rout 2021</p>
+            <p style={{textAlign:'center',position:"absolute", fontSize:15, marginLeft:0, left:0, right:0,  bottom:'5vh' }}>© Sandip Rout {new Date().getFullYear()}</p>
         </Sidemenu>
     );
 
