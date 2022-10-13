@@ -12,7 +12,7 @@ const Projects = [
         pageLink:'grab-a-snak',
         urls:{
             prodURL:"",
-            uiURL:"http://grab-a-snak-develop.s3-website-us-east-1.amazonaws.com/"
+            uiURL:"https://grab-a-snak-ui.netlify.app/"
         },
         description:{
             name:"Grab a snak",
@@ -53,7 +53,7 @@ const Projects = [
         title:"READN -  A Blog page on book review",
         pageLink:'readn',
         urls:{
-            prodURL:"https://apex-dev-ui.netlify.app/"
+            prodURL:"https://www.readn.org/"
         },
         description:{
             name:"Readn",
